@@ -1,0 +1,41 @@
+$font-size: 20px;
+.article {
+    .article__title {
+        font-size: $font-size * 2;
+        .badge {
+            font-size: 50%;
+        }
+    }
+    .article__date {
+        font-size: $font-size;
+    }
+    .article__readTime {
+        font-size: $font-size;
+    }
+    .article__content {
+        font-size: $font-size;
+        line-height: 2;
+        text-align: justify;
+        a {
+            text-decoration: underline;
+            transition: 0.25s;
+            &:hover {
+                color: darker(inherit, 20%);
+            }
+        }
+    }
+}
+.dark-mode {
+    .article {
+        .article__content {
+            a {
+                color: $darkFontColor !important;
+                text-decoration: underline;
+                transition: 0.25s;
+                &:hover {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}

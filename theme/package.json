@@ -1,0 +1,20 @@
+{
+  "name": "fatec-praia-grande-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o .",
+    "scss-manual": "node-sass assets/scss -o .",
+    "scss-minify": "node-sass --watch assets/scss -o . --output-style compressed"
+  },
+  "author": "Mateus Vidal Marinho",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.14.7"
+  }
+}

@@ -1,0 +1,15 @@
+.slide {
+    background-color: lighten($darkSecondaryBgColor, 20%);
+    .slide__title {
+        .slide__link {
+            background-color: lighten($darkBgColor, 40%);
+            border-radius: 3px;
+            color: white;
+            padding: 0.15em 0.5em;
+        }
+    }
+    .slide__image {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

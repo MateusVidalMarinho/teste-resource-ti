@@ -1,0 +1,30 @@
+.darkModeTogglerButton {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 9999;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none !important;
+    transition: 0.25s;
+    background-color: $darkBgColor;
+    &:hover {
+        border: 2px solid $lightBgColor;
+        width: 40px;
+        height: 40px;
+        transition: 0.25s;
+    }
+    span {
+        color: white;
+    }
+}
+.dark-mode {
+    .darkModeTogglerButton {
+        background-color: aliceblue;
+        span {
+            color: $darkSecondaryBgColor;
+        }
+    }
+}

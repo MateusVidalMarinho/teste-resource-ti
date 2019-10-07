@@ -1,0 +1,28 @@
+.commentsResponse {
+    .commentsResponse__activeUser {
+        a {
+            color: black !important;
+            font-weight: 700 !important;
+        }
+    }
+}
+.commentsList {
+    a {
+        font-weight: 700 !important;
+    }
+}
+
+.dark-mode {
+    .commentsResponse {
+        .commentsResponse__activeUser {
+            a {
+                color: white !important;
+            }
+        }
+    }
+    .commentsList {
+        a {
+            color: white !important;
+        }
+    }
+}

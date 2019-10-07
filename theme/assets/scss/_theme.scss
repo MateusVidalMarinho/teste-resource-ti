@@ -1,0 +1,21 @@
+$darkBgColor: #1e1e22;
+$darkSecondaryBgColor: #141418;
+$darkFontColor: #f0f0fa;
+$lightBgColor: #4949c7;
+
+.light-mode {
+    .custom-navbar {
+        background-color: $lightBgColor !important;
+    }
+    .custom-navbar .nav-link {
+        color: $darkFontColor !important;
+    }
+    .custom-navbar .nav-link:hover {
+        color: white !important;
+    }
+} 
+
+.dark-mode {
+    background-color: $darkBgColor;
+    color: $darkFontColor;
+}

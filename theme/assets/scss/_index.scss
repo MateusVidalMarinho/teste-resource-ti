@@ -1,0 +1,98 @@
+.homeConteiner {
+    padding: 1em;
+}
+.postCard {
+    border-radius: 5px;
+	margin-bottom: 3em;
+	.postCard__title {
+		.postCard__link {
+			font-size: 1.2em;
+			transition: 0.25s;
+			&:hover {
+				transition: 0.25s;
+			}
+		}
+    }
+    .postCard__edit {
+        a {
+            &:hover {
+                transition: 0.25s;
+            }
+        }
+    }
+    .postCard_readMore {
+        font-weight: 700;
+    }
+}
+
+.postCard {
+    .postCard__title {
+		.postCard__link {
+            color: $darkBgColor !important;
+            &:hover {
+                color: lighten($darkBgColor, 20%) !important;
+            }
+        }
+    }
+    .postCard__edit {
+        background-color: $darkBgColor;
+        color: $darkFontColor !important;
+        a {
+            color: inherit !important;
+            &:hover {
+                color: white !important;
+            }
+        }
+    }
+    .postCard__readMore {
+        color: $lightBgColor;
+        font-weight: 700;
+        &:hover {
+            color: lighten($lightBgColor, 5%);
+        }
+    }
+    .postCard__text {
+        color: $darkBgColor !important;
+    }
+}
+
+.light-mode {
+    .postCard {
+        border: 1px solid $darkBgColor !important;
+    }
+}
+.dark-mode {
+    .postCard {
+        border: 1px solid $darkBgColor !important;
+        background-color: $darkSecondaryBgColor;
+        .postCard__title {
+            .postCard__link {
+                color: $darkFontColor !important;
+                &:hover {
+                    color: white !important;
+                }
+            }
+        }
+        .postCard__text {
+            color: $darkFontColor !important;
+        }
+        .postCard__readMore {
+            color: $darkFontColor;
+            font-weight: 700;
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+        .postCard__edit {
+            background-color: white !important;
+            color: $darkBgColor !important;
+            a {
+                color: inherit !important;
+                &:hover {
+                    color: $darkSecondaryBgColor !important;
+                }
+            }
+        }
+    }
+}

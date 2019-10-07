@@ -1,0 +1,31 @@
+.article {
+    .article__title {
+        .article__editButton {
+            background-color: $darkSecondaryBgColor;
+            color: $darkFontColor !important;
+            a {
+                color: inherit !important;
+                &:hover {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+.dark-mode {
+    .article {
+        .article__title {
+            .article__editButton {
+                background-color: white !important;
+                color: $darkBgColor !important;
+                a {
+                    color: inherit !important;
+                    &:hover {
+                        color: $darkSecondaryBgColor !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.pagination {
+    a {
+        color: $lightBgColor;
+        font-weight: 700;
+    }
+}
+
+.dark-mode {
+    .pagination {
+        a {
+            color: #f0f0fa;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.forZeroFor {
+    margin: 15vh 0;
+    .forZeroFor__link {
+        font-weight: 700;
+    }
+}
+.forZeroFor {
+    .forZeroFor__link {
+        color: #f0f0fa;
+        &:hover {
+            color: white;
+        }
+    }
+}
